@@ -4,7 +4,6 @@ Docstring for CodewarsLinkedList.get_node.get_node
 
 from CodewarsLinkedList.preloaded import Node
 
-
 def get_nth(node: Node, index: int):
 
     """
