@@ -14,7 +14,7 @@ class Context(object):
         self.source = source
         self.dest = dest
 
-def move_node(source, dest):
+def move_node(source: Node, dest):
 
     """
     Docstring for move_node
