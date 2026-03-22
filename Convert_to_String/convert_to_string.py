@@ -12,7 +12,8 @@ class Node:
         self.data = data
         self.next = n
 
-    def stringify(self, node) -> str:
+    @staticmethod
+    def stringify(node) -> str:
 
         """
         Docstring for stringify
@@ -23,9 +24,11 @@ class Node:
         """
 
         s = []
-
         current = node
+        while current is not None:
+            s.append(str(current.data))
+            current = current.next
 
-        # while
+        s.append("None")
 
         return " -> ".join(s)
