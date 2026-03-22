@@ -2,33 +2,27 @@
 Convert to String Lab 8
 """
 
-class Node:
+from CodewarsLinkedList.preloaded import Node
+
+def stringify(node: Node) -> str | None:
 
     """
-    Docstring for Node
+    Displays the sequence of linked nodes starting at given 'node' as string
+
+    Examples:
+    >>> Node(0, Node(1, Node(4, Node(9, Node(16)))))
+    "0 -> 1 -> 4 -> 9 -> 16 -> None"
     """
 
-    def __init__(self, data, n = None):
-        self.data = data
-        self.next = n
+    if not isinstance(node, Node):
+        return None # wrong input
 
-    @staticmethod
-    def stringify(node) -> str:
+    s = []
+    current = node
+    while current is not None:
+        s.append(str(current.data))
+        current = current.next
 
-        """
-        Docstring for stringify
+    s.append("None")
 
-        Examples:
-        >>> Node(0, Node(1, Node(4, Node(9, Node(16)))))
-        "0 -> 1 -> 4 -> 9 -> 16 -> None"
-        """
-
-        s = []
-        current = node
-        while current is not None:
-            s.append(str(current.data))
-            current = current.next
-
-        s.append("None")
-
-        return " -> ".join(s)
+    return " -> ".join(s)
