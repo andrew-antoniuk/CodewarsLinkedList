@@ -12,7 +12,6 @@ class Node:
         self.data = data
         self.next = n
 
-
 def remove_duplicates(head: Node):
 
     """
