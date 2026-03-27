@@ -2,7 +2,16 @@
 Docstring for CodewarsLinkedList.get_node.get_node
 """
 
-from CodewarsLinkedList.preloaded import Node
+class Node:
+
+    """
+    Docstring for Node
+    """
+
+    def __init__(self, data, n = None):
+        self.data = data
+        self.next = n
+
 
 def get_nth(node: Node, index: int):
 

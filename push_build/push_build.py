@@ -2,7 +2,15 @@
 Docstring for CodewarsLinkedList.push_build.push_build
 """
 
-from CodewarsLinkedList.preloaded import Node
+class Node:
+
+    """
+    Docstring for Node
+    """
+
+    def __init__(self, data, n = None):
+        self.data = data
+        self.next = n
 
 
 def push(head, data):

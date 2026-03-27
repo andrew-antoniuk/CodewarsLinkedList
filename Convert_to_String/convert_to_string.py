@@ -2,7 +2,16 @@
 Convert to String Lab 8
 """
 
-from CodewarsLinkedList.preloaded import Node
+class Node:
+
+    """
+    Docstring for Node
+    """
+
+    def __init__(self, data, n = None):
+        self.data = data
+        self.next = n
+
 
 def stringify(node: Node) -> str | None:
 

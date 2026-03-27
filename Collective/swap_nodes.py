@@ -31,7 +31,6 @@ class Solution:
         previous = prev_head
         current = head
 
-
         while current is not None and current.next is not None: # pair check
             first = current
             second = current.next

@@ -2,23 +2,27 @@
 Docstring for swap_nodes.swap_nodes
 """
 
-from preloaded import Node
+class Node:
+
+    """
+    Docstring for Node
+    """
+
+    def __init__(self, data, n = None):
+        self.data = data
+        self.next = n
+
 
 def swap_pairs(head):
 
     """
     Docstring for swap_pairs
-
-    :param head: Description
-    :return: Description
-    :rtype: Any
     """
 
     prev_head = Node(0)
     prev_head.next = head
     previous = prev_head
     current = head
-
 
     while current is not None and current.next is not None: # pair check
         first = current

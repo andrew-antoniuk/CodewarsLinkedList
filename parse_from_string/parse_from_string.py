@@ -2,7 +2,16 @@
 Docstring for CodewarsLinkedList.parse_from_string.parse_from_string
 """
 
-from CodewarsLinkedList.preloaded import Node
+class Node:
+
+    """
+    Docstring for Node
+    """
+
+    def __init__(self, data, n = None):
+        self.data = data
+        self.next = n
+
 
 def linked_list_from_string(list_repr: str) -> Node | None:
 
