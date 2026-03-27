@@ -42,7 +42,7 @@ class Solution:
             # complete the swap
             second.next = first
 
-            # Move our trackers forward for the next pair
+            # move forward
             previous = first
             current = first.next
 
