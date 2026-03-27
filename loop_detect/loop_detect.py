@@ -35,7 +35,6 @@ def detect(head: Node):
 
     return False
 
-
 def loop_size(head: Node):
 
     """
